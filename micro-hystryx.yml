@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: turbine
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+turbine:
+  clusterNameExpression: new String("default")
+  appConfig: ACCOUNT-SERVICE,CUSTOMER-SERVICE
+  combineHostPort: true
