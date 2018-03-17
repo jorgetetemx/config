@@ -12,12 +12,9 @@ endpoints:
 zuul:
   prefix: /api
   routes:
-    account: 
-      path: /account/**
-      serviceId: account-service
-    customer: 
-      path: /customer/**
-      serviceId: customer-service          
+    user: 
+      path: /user/**
+      serviceId: micro-service-user
 
 ribbon:
   eureka:
@@ -28,9 +25,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
     registerWithEureka: false
-      
-server:
-  port: 8765
 
 logging:
   level:
