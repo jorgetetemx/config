@@ -16,5 +16,5 @@ eureka:
 
 turbine:
   clusterNameExpression: new String("default")
-  appConfig: ACCOUNT-SERVICE,CUSTOMER-SERVICE
+  appConfig: MICRO-SERVICE-USER
   combineHostPort: true
